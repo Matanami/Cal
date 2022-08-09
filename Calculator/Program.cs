@@ -5,7 +5,9 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        NaiveSolution.FirstNaiv();
-        NaiveSolution.SecNaiv();
+        NaiveSolution nav = new NaiveSolution();
+        nav.ConnctionToUser();
+        nav.Calculat();
+        nav.printResult();
     }
 }
