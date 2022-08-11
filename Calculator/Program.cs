@@ -7,7 +7,6 @@ public class Program
     {
         NaiveSolution nav = new NaiveSolution();
         nav.ConnctionToUser();
-        nav.Calculat();
-        nav.printResult();
+        nav.SendToCalculat();
     }
 }
