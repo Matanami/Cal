@@ -8,13 +8,12 @@ namespace Calculator
         private string m_input;
         private List<int> m_numbers = new List<int>();
         private List<char> m_oprators = new List<char>();
-        private int m_result;
 
         public void ConnctionToUser()
         {
             Console.WriteLine("Enter your calculation" );
             m_input = Console.ReadLine();
-            foreach (Match match in Regex.Matches(m_input, @"([*+/\-)(])|([0-9]+)"))
+            foreach (Match match in Regex.Matches(m_input, @"([*+/\-])|([0-9]+)"))
             {
                 try
                 {
